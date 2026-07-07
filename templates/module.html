@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<video autoplay muted loop playsinline class="bg-video" id="bgVideo">
+    <source src="{{ url_for('static', filename='videos/background.mp4') }}" type="video/mp4">
+</video>
+
+<div class="overlay"></div>
+
+<header>
+    <h1>⚛ {{ title }}</h1>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/bell">Bell States</a>
+        <a href="/entanglement">Entanglement</a>
+        <a href="/teleportation">Teleportation</a>
+    </nav>
+</header>
+
+<section class="quantum-section">
+    <h2>{{ title }}</h2>
+
+    <h3>Quantum Circuit</h3>
+    <pre>{{ circuit }}</pre>
+
+    <h3>Measurement Results</h3>
+    <pre>{{ counts }}</pre>
+
+    <a href="/" class="back-btn">Back to Dashboard</a>
+</section>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>

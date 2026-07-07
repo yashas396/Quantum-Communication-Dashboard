@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Communication Dashboard</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <!-- Video Background -->
+    <video autoplay muted loop playsinline class="bg-video" id="bgVideo">
+        <source src="{{ url_for('static', filename='videos/background.mp4') }}" type="video/mp4">
+    </video>
+
+    <!-- Dark Overlay -->
+    <div class="overlay"></div>
+
+    <!-- Header -->
+    <header>
+        <h1>⚛ Quantum Communication Dashboard</h1>
+
+        <nav>
+            <a href="/">Home</a>
+            <a href="/bell">Bell States</a>
+            <a href="/entanglement">Entanglement</a>
+            <a href="/teleportation">Teleportation</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Explore Quantum Communication</h2>
+
+        <p>
+            Simulate Bell States, Quantum Entanglement, and Quantum Teleportation
+            through an interactive Flask and Qiskit-powered dashboard.
+        </p>
+
+        <button onclick="showMessage()">Start Simulation</button>
+    </section>
+
+    <!-- Cards Section -->
+    <section class="cards">
+
+        <div class="card">
+            <h3>Bell States</h3>
+            <p>Create and observe entangled Bell State circuits.</p>
+            <a href="/bell">Open Module</a>
+        </div>
+
+        <div class="card">
+            <h3>Entanglement</h3>
+            <p>Visualize correlated qubits and measurement outcomes.</p>
+            <a href="/entanglement">Open Module</a>
+        </div>
+
+        <div class="card">
+            <h3>Teleportation</h3>
+            <p>Explore how quantum state transfer works using Qiskit.</p>
+            <a href="/teleportation">Open Module</a>
+        </div>
+
+    </section>
+
+    <!-- Extra Scroll Section -->
+    <section class="quantum-section">
+        <h2>Interactive Quantum Simulation</h2>
+
+        <p>
+            Scroll through the dashboard and experience a cinematic black hole-inspired
+            quantum environment while exploring circuit execution, measurement results,
+            and quantum communication protocols.
+        </p>
+    </section>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
