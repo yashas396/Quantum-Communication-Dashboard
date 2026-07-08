@@ -1,36 +1,154 @@
-<div align="center">
+# Quantum Communication Dashboard
 
-# ⚛ Quantum Communication Dashboard
+A web-based application for exploring fundamental quantum communication protocols through interactive simulations built with **Flask** and **Qiskit**.
 
-### *Visualizing Quantum Communication through Interactive Simulations*
+The dashboard demonstrates three foundational quantum communication concepts:
 
-An immersive web application built with **Flask**, **Qiskit**, and **IBM Quantum** to explore the fundamental concepts of **Bell States**, **Quantum Entanglement**, and **Quantum Teleportation** through interactive simulations and modern web technologies.
+- Bell State Generation
+- Quantum Entanglement
+- Quantum Teleportation
 
-<br>
-
-![Python](https://img.shields.io/badge/Python-3.12+-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Flask](https://img.shields.io/badge/Flask-Web_App-000000?style=for-the-badge&logo=flask)
-![Qiskit](https://img.shields.io/badge/Qiskit-Quantum-6929C4?style=for-the-badge)
-![IBM Quantum](https://img.shields.io/badge/IBM-Quantum-1261FE?style=for-the-badge&logo=ibm)
-![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
-
-</div>
+Each module executes quantum circuits using Qiskit and presents the corresponding measurement results through an intuitive web interface.
 
 ---
 
-## 🌌 About the Project
+## Overview
 
-Quantum Communication is one of the most fascinating areas of quantum computing, enabling secure information transfer through the principles of quantum mechanics.
+Quantum communication leverages the principles of quantum mechanics to transmit and process information in ways that are not possible using classical systems.
 
-This project provides an interactive dashboard where users can explore:
+This project was developed to provide an accessible, interactive environment for understanding these protocols without requiring users to interact directly with quantum programming libraries.
 
-- ⚛ Bell State Generation
-- 🔗 Quantum Entanglement
-- 🚀 Quantum Teleportation
-- 📊 Quantum Circuit Visualization
-- 📈 Measurement Results
-- 🖥 Interactive Flask Web Interface
+The application combines:
 
-Beyond implementing quantum algorithms, this project focuses on presenting these concepts through a clean and engaging web experience.
+- A Flask-based web interface
+- Quantum circuit implementation using Qiskit
+- Interactive frontend built with HTML, CSS, and JavaScript
+- Circuit execution through Qiskit Aer Simulator
+- Support for execution on IBM Quantum hardware
 
 ---
+
+## Features
+
+- Interactive Quantum Communication Dashboard
+- Bell State Simulation
+- Quantum Entanglement Demonstration
+- Quantum Teleportation Workflow
+- Quantum Circuit Visualization
+- Measurement Results
+- Responsive Web Interface
+- Modular Flask Architecture
+- IBM Quantum Compatible
+
+---
+
+## Technology Stack
+
+| Category | Technology |
+|----------|------------|
+| Backend | Flask |
+| Quantum SDK | Qiskit |
+| Quantum Simulator | Qiskit Aer |
+| Programming Language | Python |
+| Frontend | HTML, CSS, JavaScript |
+| Visualization | Matplotlib |
+
+---
+
+## Project Structure
+
+```text
+Quantum-Communication-Dashboard/
+│
+├── app.py
+├── requirements.txt
+│
+├── quantum/
+│   ├── bell_states.py
+│   ├── entanglement.py
+│   └── teleportation.py
+│
+├── templates/
+│   ├── index.html
+│   └── module.html
+│
+├── static/
+│   ├── style.css
+│   ├── script.js
+│   └── videos/
+│
+└── outputs/
+```
+
+---
+
+## Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/yashas396/Quantum-Communication-Dashboard.git
+```
+
+Navigate into the project
+
+```bash
+cd Quantum-Communication-Dashboard
+```
+
+Install the dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+Start the Flask server
+
+```bash
+python app.py
+```
+
+Open your browser
+
+```
+http://127.0.0.1:5000
+```
+
+---
+
+## Screenshots
+
+> Screenshots will be added after the premium interface is completed.
+
+---
+
+## Roadmap
+
+- [x] Flask Dashboard
+- [x] Bell State Module
+- [x] Quantum Entanglement Module
+- [x] Quantum Teleportation Module
+- [x] Qiskit Integration
+- [x] IBM Quantum Hardware Execution
+- [ ] Premium Interactive UI
+- [ ] Animated Circuit Visualization
+- [ ] Live Backend Status
+- [ ] Quantum Network Simulation
+
+---
+
+## Author
+
+**Yashaswini Namani**
+
+B.Tech Artificial Intelligence
+
+Qiskit Advocate
+
+GitHub: https://github.com/yashas396
+
+---
+
+## License
+
+This project is licensed under the MIT License.
